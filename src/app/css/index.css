@@ -185,11 +185,23 @@ background: linear-gradient(#222, #222) padding-box,var(--lightsky-gradient) bor
 
 .page-header{text-align: center; padding:30px 30px 10px;}
 .page-header h1{font:bold 48px 'Roboto', sans-serif;}
+.blog-header{text-align: start; padding:30px 30px 10px;}
+.blog-header h1{font:600 48px 'Roboto', sans-serif;}
 
-.blogCat{text-align: center; margin-bottom:50px;}
+.blogCat{
+	/* text-align: center; */
+	margin-bottom:50px !important;
+	justify-content: center;
+}
 .blogCat .bcitem{text-decoration: none;background: #fff;color: #222;display: inline-block;border-radius:50px; padding:8px 20px; margin:0 5px 10px; transition:all ease 0.3s;}
 .blogCat .bcitem:hover{background:var(--sky);color: #000;}
-
+.blogCat .active {
+    background: var(--sky);
+    color: #FFF !important;
+}
+.blog-container{height: 100%; overflow: hidden;}
+.blog_img{ height: 400px; width: -webkit-fill-available;}
+.blog-text{padding: 30px;}
 
 
 @media all and (min-width:768px){
