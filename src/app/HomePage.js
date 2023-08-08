@@ -1,6 +1,17 @@
 import React from 'react'
+var $ = require('jquery');
 import Footer from './Footer'
 import Link from 'next/link'
+
+if (typeof window !== "undefined") {
+   window.$ = window.jQuery = require("jquery");
+}
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
+import dynamic from "next/dynamic";
+const OwlCarousel = dynamic(() => import("react-owl-carousel"), {
+	ssr: false,
+});
 
 export const HomePage = () => {
   return (
@@ -11,7 +22,7 @@ export const HomePage = () => {
 	    	<div className="banner-intro order-lg-2">
 	    		<h1>One <span className="text-sky">App</span> Is Enough For</h1>
 	    		<h4>All your <span className="text-aliceblue">Exam Preparation</span></h4>
-	    		<a className="btn btn-primary" href="#">Download App</a>
+	    		<a className="btn btn-primary" href="#dwdApp">Download App</a>
 	    	</div>
 	    	<div className="d-flex justify-content-end order-lg-1">
 	    		<div className="mock-wraper">
@@ -33,10 +44,11 @@ export const HomePage = () => {
       	{/* second container */}
       	<div className="container" id="menuWrapper">
 	      	<div className="social">
-	      		<a href="#"><img src="/instagram-logo.svg" /></a>
-	      		<a href="#"><img src="/facebook-logo.svg" /></a>
-	      		<a href="#"><img src="/linkedin-logo.svg" /></a>
-	      		<a href="#"><img src="/twitter-logo.svg" /></a>
+	      		<a href="https://www.instagram.com/secondbrain_app/" target='_blank'><img src="/instagram-logo.svg" /></a>
+	      		<a href="https://www.facebook.com/people/Second-Brain/100091783296992/" target='_blank'><img src="/facebook-logo.svg" /></a>
+	      		<a href="https://www.linkedin.com/company/secondbrainapp/" target='_blank'><img src="/linkedin-logo.svg" /></a>
+	      		{/* <a href="#"><img src="/twitter-logo.svg" /></a> */}
+				<a href="https://www.youtube.com/@SecondBrain-Smart_Revision_App" target='_blank'><img src="/youtube-logo.svg" /></a>
 	      	</div>
 
 	      	<div id="mainmenu">
@@ -47,16 +59,15 @@ export const HomePage = () => {
 	      		<li className="nav-item">
 	      		  <a className="nav-link" href="#usecases">Use cases</a>
 	      		</li>
-	      		<li className="nav-item">
+	      		{/* <li className="nav-item">
 	      		  <a className="nav-link" href="#howitworks">How it Works?</a>
-	      		</li>
+	      		</li> */}
 	      		<li className="nav-item">
 	      		  <a className="nav-link" href="#packages">Pricing</a>
 	      		</li>
-	      		<li className="nav-item">
+	      		{/* <li className="nav-item">
 	      		  <Link className="nav-link" href="blog">Blog</Link>
-					{/* <Link href="blog">Blog Post</Link> */}
-	      		</li>
+	      		</li> */}
 	      	  </ul>
 	      	</div>
       	</div>
@@ -89,7 +100,7 @@ export const HomePage = () => {
 						<h2 className="d-none d-lg-block">What is Second Brain ?</h2>
 						<h5>Cognitive AI Applied</h5>
 						<p>Second Brain, a cutting-edge AI-powered platform utilizing deep tech advancements, revolutionizes learning. It leverages the Forgetting Curve principle for optimal memory recall. With the ability to consolidate study material like handwritten notes,pdfs,lecture notes,audios,videos at one place, it offers unparalleled organization. Second Brain employs AI to generate the personalized revision schedules for any studied topic.Through real-time revision notifications, users receive timely reminders for effective knowledge retention. Its advanced algorithms and personalized revision schedules set new standards in efficient learning. </p>
-						<a href="#" className="btn btn-outline-info">Download App</a>
+						<a href="#dwdApp" className="btn btn-outline-info">Download App</a>
 					</div>
 				</div>
 			</div>
@@ -159,7 +170,7 @@ export const HomePage = () => {
 					</div>
 				
 					<div className="text-center mt-5 d-none d-md-block">
-						<a href="#" className="btn btn-primary">Download App</a>
+						<a href="#dwdApp" className="btn btn-primary">Download App</a>
 					</div>
 				</div>
 			</div>
@@ -210,12 +221,12 @@ export const HomePage = () => {
 		</section>
 
 		{/* 7th container */}
-		<section id="howitworks" className="section">
+		 <section id="howitworks" className="section">
 			<img src="/howitworks-circle.png" className="glowBgimg" alt="" />
 
 			<div className="container">
 				<h2 className="text-center">How It Works?</h2>
-				<div className="owl-carousel owl-theme">
+				{/* <div className="owl-carousel owl-theme">
 					<div className="item">
 						<div className="row">
 							<div className="col-md-4 order-md-1 stepCount">
@@ -230,7 +241,7 @@ export const HomePage = () => {
 							</div>
 						</div>
 					</div>
-					{/* <div className="item">
+					<div className="item">
 						<div className="row">
 							<div className="col-md-4 order-1 stepCount">
 								Step 2
@@ -243,11 +254,56 @@ export const HomePage = () => {
 								<img src="/Step1.png" alt="Second Brain" />
 							</div>
 						</div>
-					</div> */}
-				</div>
+					</div> 
+				</div> */}
+				<OwlCarousel
+              		loop={true}
+              		items={1}
+              		responsiveRefreshRate={0}
+              		autoplay={true}
+              		autoplayTimeout={7000}
+              		autoplayHoverPause={true}
+              		nav={true}
+              		navText={[
+                		"<i class='icon-arrow-prev'></i>",
+                		"<i class='icon-arrow-next'></i>"
+              		]}
+              		dots={false}
+              		margin={20}
+            	>
+					<>
+              		<div className="item">
+						<div className="row">
+							<div className="col-md-4 order-1 stepCount">
+								Step 2
+							</div>
+							<div className="col-md-4 order-md-3 stepInfo">
+								<div className="stepTitle">Register on app</div>
+								<p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur.</p>
+							</div>
+							<div className="col-md-4 order-md-2">
+								<img src="/Step1.png" alt="Second Brain" />
+							</div>
+						</div>
+					</div>
+					<div className="item">
+						<div className="row">
+							<div className="col-md-4 order-1 stepCount">
+								Step 2
+							</div>
+							<div className="col-md-4 order-md-3 stepInfo">
+								<div className="stepTitle">Register on app</div>
+								<p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur.</p>
+							</div>
+							<div className="col-md-4 order-md-2">
+								<img src="/Step1.png" alt="Second Brain" />
+							</div>
+						</div>
+					</div>
+					</>
+            	</OwlCarousel>
 			</div>
-		</section>
-		
+		</section>		
 		{/* 8th container */}
 		<section id="packages" className="section">
 			<img src="/pkg-circle.png" className="glowBgimg" alt="" />
@@ -337,8 +393,8 @@ export const HomePage = () => {
 						<h3>DOWNLOAD APP & <br />GET THE VOUCHER!</h3>
 						<p>Get all your study materials at one place, Solve mock test and past papers, create your personalized your time-table</p>
 
-						<button><img src="/app-store.png" alt="App Store" /></button>
-						<button><img src="/google-play.png" alt="Google Play" /></button>
+						{/* <button><img src="/app-store.png" alt="App Store" /></button> */}
+						<a href='https://play.google.com/store/apps/details?id=com.second.brain.app&hl=en&gl=US' target='_blank'><img src="/google-play.png" alt="Google Play" /></a>
 					</div>
 					<div className="col-md-6">
 						<img src="/download-app.svg" alt="download app" className="d-none d-md-block" />

@@ -21,9 +21,9 @@ body{
 }
 
 h1,h2,h3,h4{font-family:'Rufina', sans-serif; color: #fff;}
-h1,.h1{font-size: 90px}
-h2{font-size: 64px; margin-bottom: 30px;}
-h5{font-size: 24px;}
+h1,.h1{font-size: 90px !important;}
+h2{font-size: 55px !important; margin-bottom: 30px;}
+h5{font-size: 24px !important;}
 .owl-carousel .owl-item img{width:auto}
 img{max-width:100%;}
 
@@ -41,11 +41,11 @@ img{max-width:100%;}
 
 .text-sky{color:var(--sky);}
 .text-aliceblue{color:var(--aliceblue);}
-.btn{height:50px;min-width:200px; line-height:36px;}
+.btn{height:50px;min-width:200px; line-height:36px !important;}
 .btn-primary{background-color:var(--blue); font-family:'Rufina', sans-serif}
 .btn-primary:hover{background-color:#2074ef;}
 .btn-outline-info{font-family:'Rufina', sans-serif}
-.btn-primary-grd{background:var(--primary-gradient);color: #fff;}
+.btn-primary-grd{background:var(--primary-gradient);color: #fff !important;}
 .btn-primary-grd:hover{background:var(--secondary-gradient);color: #fff;}
 .btn-secondary-grd{background:var(--secondary-gradient);color: #fff;}
 .btn-secondary-grd:hover{background:linear-gradient(180deg, #37d9ff 35%, #22b5fb 100%);  color: #fff;}
@@ -235,7 +235,7 @@ background: linear-gradient(#222, #222) padding-box,var(--lightsky-gradient) bor
 	#learners .owl-item.active.center .learner-course{order:2; width: 100%; font-size: 14px;}
 }
 @media all and (max-width:1399px){
-	.banner-intro{top:50%;}
+	/* .banner-intro{top:50%;} */
 	.mock-wraper .bannerCourse{transform:scale(0.7) translateY(-50%); left:auto; right:-8%; transform-origin: top;}
 	#sitefooter button{width: 120px;}
 }
@@ -263,9 +263,9 @@ background: linear-gradient(#222, #222) padding-box,var(--lightsky-gradient) bor
 	.banner-intro h1{font-size: 36px;width:200px; margin:auto}
 	.banner-intro h4{font-size: 16px;text-align: center; margin:10px 0 20px}
 	.banner-intro .btn{min-width:160px;}
-	.h1{font-size: 36px;}
-	h2{font-size: 32px;}
-	h5{font-size: 16px; font-weight: bold;}
+	.h1{font-size: 36px !important;}
+	h2{font-size: 32px !important;}
+	h5{font-size: 16px !important; font-weight: bold;}
 	#whatwedo{text-align: center;}
 	#whatwedo img{width: 215px; margin-bottom: 20px;}
 	#features .secInfo{margin-bottom: 20px;}
