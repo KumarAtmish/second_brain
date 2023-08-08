@@ -76,7 +76,7 @@ export const HomePage = () => {
 
       	{/* third container */}
         
-      	<section id="loved" className="section text-center">
+      	{/* <section id="loved" className="section text-center">
       		<h2>Students Loved</h2>
 	
       		<div className="owl-carousel owl-theme instLogos" style={{display: "flex",justifyContent: "space-evenly"}}>
@@ -85,7 +85,7 @@ export const HomePage = () => {
       			<div className="item"><img src="/aakash.png" alt="" /></div>
       		</div>
 	
-      	</section>
+      	</section> */}
 
 		{/* fourth container */}
 		<section id="whatwedo" className="section">
