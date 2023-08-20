@@ -1,3 +1,5 @@
+import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Footer = () => {
@@ -13,8 +15,8 @@ const Footer = () => {
 	    				<h5>Company</h5>
 	    				<ul>
 	    					<li><a href="#whatwedo">About Us</a></li>
-	    					{/* <li><a href="#">Blog</a></li>
-	    					<li><a href="#">Careers</a></li> */}
+	    					<li><Link className="nav-link" href="blog">Blog</Link></li>
+	    					{/*<li><a href="#">Careers</a></li> */}
 	    				</ul>
 	    			</div>
 	    			<div className="col-md">

@@ -8,7 +8,7 @@ const Header = () => {
 	    	<nav className="navbar navbar-expand-lg">
 	    	  <div className="container-fluid">
 	    		<a className="navbar-brand" href="/">
-                    {/* <Image 
+                    {/* <img 
                         src="/logo.svg" 
                         alt="2nd Brain"
                         width={0}
