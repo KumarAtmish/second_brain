@@ -103,7 +103,7 @@ export const HomePage = () => {
 					<h2 className="text-center">
 						Features of Second Brain App
 					</h2>
-					<div className="secInfo text-center">
+					<div clas119sName="secInfo text-center">
 						Supercharge your learning with Second Brain! Organize all study materials in one place - PDFs, articles, videos, and more. Get timely reminders for seamless revisions and stay on top of your game!
 					</div>
 					<div className="row align-items-center">

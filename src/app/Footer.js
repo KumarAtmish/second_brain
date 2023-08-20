@@ -14,9 +14,10 @@ const Footer = () => {
 	    			<div className="col-md-auto">
 	    				<h5>Company</h5>
 	    				<ul>
-	    					<li><a href="#whatwedo">About Us</a></li>
-	    					<li><Link className="nav-link" href="blog">Blog</Link></li>
-	    					{/*<li><a href="#">Careers</a></li> */}
+	    					<li><a href="#">About Us</a></li>
+	    					<li><Link href="blog">Blog</Link></li>
+	    					<li><a href="#">Careers</a></li>
+	    					<li><Link href="guide">Guide</Link></li>
 	    				</ul>
 	    			</div>
 	    			<div className="col-md">
