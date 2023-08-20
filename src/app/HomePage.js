@@ -103,7 +103,7 @@ export const HomePage = () => {
 					<h2 className="text-center">
 						Features of Second Brain App
 					</h2>
-					<div className="secInfo text-center">
+					<div clas119sName="secInfo text-center">
 						Supercharge your learning with Second Brain! Organize all study materials in one place - PDFs, articles, videos, and more. Get timely reminders for seamless revisions and stay on top of your game!
 					</div>
 					<div className="row align-items-center">
@@ -116,7 +116,7 @@ export const HomePage = () => {
 									Organize your study materials at one place   
 								</h3>
 								<p>
-								Second Brain's personalizedstore handwritten notes, web articles, YouTube videos, PDFs, audio, and video files all in one convenient place! revision schedule and timely notifications for any topic, ensuring you never miss a chance to review and ace your learning journey.
+									Second Brain&apos;s personalized store handwritten notes, web articles, YouTube videos, PDFs, audio, and video files all in one convenient place! revision schedule and timely notifications for any topic, ensuring you never miss a chance to review and ace your learning journey.
 								</p>
 							</div>
 				
@@ -142,7 +142,7 @@ export const HomePage = () => {
 								</span>
 								<h3>Get personalized revision schedule for any topic</h3>
 								<p>
-									Second Brain's personalized revision schedule and timely notifications for any topic, ensuring you never miss a chance to review and ace your learning journey
+									Second Brain&apos;s personalized revision schedule and timely notifications for any topic, ensuring you never miss a chance to review and ace your learning journey
 								</p>
 							</div>
 				
@@ -173,10 +173,10 @@ export const HomePage = () => {
 				<div className="row">
 					<div className="col-lg-5">
 						<h2 className="h1">Use Cases</h2>
-						<div className="secInfo">What ever you preparing for, we have solution's for all  </div>
+						<div className="secInfo">What ever you preparing for, we have solution&apos;s for all  </div>
 					</div>
 					<div className="col-lg-7">
-						<p>Welcome to the world of Second Brain App, your ultimate smart and effective study companion for exam preparation! Our app caters to a wide range of popular exams, making it the perfect tool for students and learners like you. Whether you're preparing for competitive entrance exams, board exams, university assessments, or any other academic challenge, Second Brain has got you covered. With personalized revision schedules and AI-powered technology, you'll tackle every topic with confidence and stay ahead of the competition. Say goodbye to scattered study materials and embrace the future of revision with Second Brain App. Download now and unlock the full potential of your studies!</p>
+						<p>Welcome to the world of Second Brain App, your ultimate smart and effective study companion for exam preparation! Our app caters to a wide range of popular exams, making it the perfect tool for students and learners like you. Whether you&apos;re preparing for competitive entrance exams, board exams, university assessments, or any other academic challenge, Second Brain has got you covered. With personalized revision schedules and AI-powered technology, you&apos;ll tackle every topic with confidence and stay ahead of the competition. Say goodbye to scattered study materials and embrace the future of revision with Second Brain App. Download now and unlock the full potential of your studies!</p>
 					</div>
 				</div>
 
@@ -284,7 +284,7 @@ export const HomePage = () => {
 					</div>
 					<div className="col-lg pkgItem bestPkg">
 						<span className="bestPkgvalue btn-secondary-grd">Best Value</span>
-						<div className="pkgTitle">3 Month's</div>
+						<div className="pkgTitle">3 Month&apos;s</div>
 						<div className="pkgExp">Quarterly pack to help you to get started</div>
 						<div className="pkgInfo">
 							<ul>
@@ -297,7 +297,7 @@ export const HomePage = () => {
 						<button className="btn btn-secondary-grd">Get Started</button>
 					</div>
 					<div className="col-lg pkgItem">
-						<div className="pkgTitle">6 Month's</div>
+						<div className="pkgTitle">6 Month&apos;s</div>
 						<div className="pkgExp">Half Yearly pack to help you to get started</div>
 						<div className="pkgInfo">
 							<ul>
