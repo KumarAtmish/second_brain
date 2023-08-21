@@ -58,11 +58,77 @@ img{max-width:100%;}
 .mock-wraper .bannerCourse{position: absolute; top:50%; left:0; transform:translateY(-50%); z-index:-2; height: 370px;width: 100%;}
 .mock-wraper .bannerCourse span{display:inline-flex; background:#000; border-radius:50%; width: 100px;height: 100px; justify-content:center; align-items:center; position: absolute;}
 
-.mock-wraper .bannerCourse span:first-child{top: 0;left:2%;}
-.mock-wraper .bannerCourse span:nth-child(2){top:52%;left:12%;}
-.mock-wraper .bannerCourse span:nth-child(3){bottom:0;left:-10%;}
-.mock-wraper .bannerCourse span:nth-child(4){top:10%;right:10%;}
-.mock-wraper .bannerCourse span:last-child{bottom:8%;right:-5%;}
+.mock-wraper .bannerCourse .cr1{top: 0;left:2%; animation:linear 12s move1 infinite;}
+.mock-wraper .bannerCourse .cr2{top:52%;left:12%; animation:linear 15s move2 infinite;}
+.mock-wraper .bannerCourse .cr3{bottom:0;left:-10%; animation:linear 10s move3 infinite;}
+.mock-wraper .bannerCourse .cr4{top:10%;right:10%; animation:linear 10s move4 infinite;}
+.mock-wraper .bannerCourse .cr5{top:30%;right:-15%; animation:linear 15s move5 infinite;}
+.mock-wraper .bannerCourse .cr6{bottom:8%;right:-5%; animation:linear 15s move6 infinite;}
+
+@keyframes move1 {
+	0%,100%{top: 0;left:2%;}
+	40%{top:40%;left:-10%;}
+	60%{top:55%;left:-7%;}
+}
+@-webkit-keyframes move1 {
+	0%,100%{top: 0;left:2%;}
+	40%{top:40%;left:-10%;}
+	60%{top:55%;left:-7%;}
+}
+@keyframes move2 {
+	0%,100%{top:52%;left:12%;}
+	50%{top:0%;left:5%;}
+}
+@-webkit-keyframes move2 {
+	0%,100%{top:52%;left:12%;}
+	50%{top:0%;left:5%;}
+}
+@keyframes move3 {
+	0%,100%{bottom:0;left:-15%;}
+	20%{bottom:5%;left:0%;}
+	50%{bottom:-10%;left:20%;}
+	70%{bottom:-15%;left:10%;}
+}
+@-webkit-keyframes move3 {
+	0%,100%{bottom:0;left:-15%;}
+	20%{bottom:5%;left:0%;}
+	50%{bottom:-10%;left:20%;}
+	70%{bottom:-15%;left:10%;}
+}
+@keyframes move4 {
+	0%,100%{top:-17%;right:0%;}
+	30%{top:30%;right:20%;}
+	50%{top:35%;right:10%;}
+}
+@-webkit-keyframes move4 {
+	0%,100%{top:-17%;right:0%;}
+	30%{top:30%;right:20%;}
+	50%{top:35%;right:10%;}
+}
+@keyframes move5 {
+	0%,100%{top:30%;right:-35%;}
+	18%{top:30%;right:-10%;}
+	30%{top:45%;right:5%;}
+	65%{top:100%;right:0%;}
+	85%{top:55%;right:-20%;}
+}
+@-webkit-keyframes move5 {
+	0%,100%{top:30%;right:-35%;}
+	18%{top:30%;right:-10%;}
+	30%{top:45%;right:5%;}
+	65%{top:100%;right:0%;}
+	85%{top:55%;right:-20%;}
+}
+@keyframes move6 {
+	0%,100%{bottom:-20%;right:5%;}
+	40%{bottom:0%;right:-20%;}
+	65%{bottom:25%;right:0%;}
+}
+@-webkit-keyframes move6 {
+	0%,100%{bottom:-20%;right:5%;}
+	40%{bottom:0%;right:-20%;}
+	65%{bottom:25%;right:0%;}
+}
 
 #bannerHome{position: relative;}
 .banner-intro{position: absolute;top:4%; transform:translateY(-50%)}
