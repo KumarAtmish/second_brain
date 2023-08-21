@@ -23,8 +23,8 @@ const Footer = () => {
 	    			<div className="col-md">
 	    				<h5>Contact</h5>
 	    				<ul>
-	    					<li><a href="mailto:secondbrainapp@gmail.com">secondbrainapp@gmail.com</a></li>
-	    					<li>+91 9995555555</li>
+	    					<li><a href="mailto:naveen@secondbrain.co.in">naveen@secondbrain.co.in</a></li>
+	    					<li>+91 7905445367</li>
 	    				</ul>
 	    			</div>
 	    		</div>

@@ -2,6 +2,7 @@ import React from 'react'
 import Footer from './Footer'
 import Link from 'next/link'
 import Silder from '@/components/Silder'
+
 export const HomePage = () => {
   return (
     <div id="bannerHome">
@@ -17,15 +18,14 @@ export const HomePage = () => {
 	    		<div className="mock-wraper">
 	    			<img src="/banner-preview.png" className="bannerApp" alt="" />
 	    			<img src="/banner-bgcircle.png" className="bannerBgimg" alt="" />
-
-	    			<div className="bannerCourse">
-	    				<span>JEE Main’s</span>
-	    				<span>NEET</span>
-	    				<span>UPSE</span>
-	    				<span>SSC</span>
-	    				<span>IBPS</span>
-						{/* <span>RRB</span> */}
-	    			</div>
+					<div class="bannerCourse">
+						<span class="cr1">{"JEE Main's"}</span>
+						<span class="cr2">NEET</span>
+						<span class="cr3">UPSE</span>
+						<span class="cr4">SSC</span>
+						<span class="cr5">IBPS</span>
+						<span class="cr6">RRB</span>
+					</div>
 	    		</div>
 	    	</div>
  	    </div>
@@ -65,7 +65,7 @@ export const HomePage = () => {
 
       	{/* third container */}
         
-      	{/* <section id="loved" className="section text-center">
+      	<section id="loved" className="section text-center">
       		<h2>Students Loved</h2>
 	
       		<div className="owl-carousel owl-theme instLogos" style={{display: "flex",justifyContent: "space-evenly"}}>
@@ -74,12 +74,12 @@ export const HomePage = () => {
       			<div className="item"><img src="/aakash.png" alt="" /></div>
       		</div>
 	
-      	</section> */}
+      	</section>
 
 		{/* fourth container */}
 		<section id="whatwedo" className="section">
 			<h2 className="d-lg-none">What is Second Brain ?</h2>
-			<img src="/banner-bgcircle.png" className="glowBgimg" alt="" />
+			<img src="/static/banner-bgcircle.png" className="glowBgimg" alt="" />
 			<div className="container">
 				<div className="row">
 					<div className="col-lg-5">
